@@ -1,0 +1,26 @@
+---
+# tasks file for rhel_package_management
+
+- name: Install basic packages
+  ansible.builtin.package:
+    name: "{{ basic_packages_list }}"
+    state: present
+  when: install_basic_packages
+
+- name: Install performance packages
+  ansible.builtin.package:
+    name: "{{ performance_packages_list }}"
+    state: present
+  when: install_performance_packages
+
+- name: Install troubleshooting packages
+  ansible.builtin.package:
+    name: "{{ troubleshooting_packages_list }}"
+    state: present
+  when: install_troubleshooting_packages
+
+- name: Remove unnecessary packages
+  ansible.builtin.package:
+    name: "{{ packages_to_remove_list }}"
+    state: absent
+  when: remove_unnecessary_packages

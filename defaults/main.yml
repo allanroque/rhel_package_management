@@ -1,0 +1,26 @@
+---
+# default vars file for rhel_package_management
+
+# Control variables to enable or disable package installation/removal
+install_basic_packages: true
+install_performance_packages: false
+install_troubleshooting_packages: false
+remove_unnecessary_packages: false
+
+# Package lists
+basic_packages_list:
+  - vim
+  - git
+  - wget
+
+performance_packages_list:
+  - tuned
+
+troubleshooting_packages_list:
+  - sysstat
+  - sos
+  - strace
+
+packages_to_remove_list:
+  - telnet
+  - cups

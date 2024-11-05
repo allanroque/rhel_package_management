@@ -1,0 +1,20 @@
+galaxy_info:
+  author: Allan Roque
+  role_name: rhel_package_management
+  namespace: allanroque
+  description: An Ansible role to manage packages on RHEL systems.
+  company: Red Hat
+  license: MIT
+  min_ansible_version: 2.9
+  platforms:
+    - name: EL
+      versions:
+        - 8
+        - 9
+
+  galaxy_tags:
+    - packages
+    - rhel
+    - management
+
+dependencies: []
