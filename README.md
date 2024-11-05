@@ -50,20 +50,3 @@ MIT
 ## Author Information
 
 Allan Roque aroque@redhat.com
-
-**Example: Install Only Basic Packages**
-
-```yaml
-# playbook.yml
-
-- name: Install only basic packages
-  hosts: rhel_servers
-  become: yes
-  vars:
-    install_basic_packages: true
-    install_performance_packages: false
-    install_troubleshooting_packages: false
-    remove_unnecessary_packages: false
-  roles:
-    - manage_rhel_packages
-```
