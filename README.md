@@ -40,6 +40,7 @@ None.
     remove_unnecessary_packages: true
   roles:
     - manage_rhel_packages
+```
 
 ## License
 
@@ -65,3 +66,4 @@ Allan Roque aroque@redhat.com
     remove_unnecessary_packages: false
   roles:
     - manage_rhel_packages
+```
